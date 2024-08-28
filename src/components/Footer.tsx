@@ -2,7 +2,7 @@ const Footer = function () {
   const copyrightYear = 2024;
   return (
     <div>
-      <h4>Copyright ${copyrightYear} | Ford</h4>
+      <h4>Copyright {copyrightYear} | Devour</h4>
     </div>
   );
 };
