@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Typography,Alert } from "@mui/material";
 import "../App.css";
 import SignatureDishesList from "./signature-dishes/SignatureDishesList";
 import StarterDishesList from "./starter-dishes/StarterDishesList";
@@ -10,6 +10,7 @@ const Home = () => {
 
   return (
     <div>
+      {location !== "Chennai" ? (<Alert severity="info">Apologies , we don't have stores here.</Alert>) : <></>}
       <Typography
         textAlign="center"
         color="red"
